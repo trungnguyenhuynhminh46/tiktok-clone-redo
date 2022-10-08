@@ -1,0 +1,125 @@
+.link {
+    display: flex;
+    align-items: center;
+}
+.accounts {
+}
+.account-item {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    border-radius: 4px;
+    transition: background ease-in-out 200ms;
+    &:hover {
+        background: rgba(22, 24, 35, 0.03);
+    }
+}
+.thumb {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.name {
+    line-height: 22px;
+    display: flex;
+    span {
+        font-weight: 700;
+        font-size: 16px;
+        margin-top: -2px;
+        margin-right: 4px;
+    }
+    svg {
+        width: 14px;
+        height: 14px;
+        color: var(--color-secondary);
+    }
+}
+.more {
+    color: rgba(22, 24, 35, 0.75);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    max-width: 26rem;
+}
+.see-all {
+    display: flex;
+    padding: 0px 8px;
+    margin-top: 8px;
+    cursor: pointer;
+
+    color: rgb(254, 44, 85);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+}
+// Popper
+.quickview {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+.logo {
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.follow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 8px;
+    min-width: 106px;
+    min-height: 28px;
+
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+
+    cursor: pointer;
+}
+.nickname {
+    line-height: 22px;
+    span {
+        font-family: var(--font-family-secondary);
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    svg {
+        width: 14px;
+        height: 14px;
+        margin-left: 4px;
+        color: var(--color-secondary);
+    }
+}
+
+.fullname {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.social {
+    margin-top: 8px;
+}
+
+.num {
+    margin-right: 6px;
+    font-weight: 700;
+    margin-right: 6px px;
+    font-size: 17px;
+    line-height: 20px;
+    display: inline-block;
+}
+
+.content:not(:last-child) {
+    margin-right: 12px;
+    color: rgba(22, 24, 35, 0.75);
+    font-size: 17px;
+    line-height: 20px;
+    display: inline-block;
+}

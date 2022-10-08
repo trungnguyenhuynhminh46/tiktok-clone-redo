@@ -5,7 +5,7 @@ import classNames from 'classnames/bind';
 import PropTypes from 'prop-types';
 // Assets
 import styles from './Menu.module.scss';
-import Popper from '../Popper/Popper';
+import Popper from '~/components/Popper';
 import MenuItem from './MenuItem';
 import MenuHeader from './MenyHeader/MenuHeader';
 // Components

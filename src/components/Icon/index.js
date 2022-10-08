@@ -1,1 +1,2 @@
-export * from './Icon';
+export * from './header/Icon';
+export * from './sidebar/Icon';

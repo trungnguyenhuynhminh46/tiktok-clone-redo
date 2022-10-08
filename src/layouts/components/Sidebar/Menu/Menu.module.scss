@@ -1,0 +1,46 @@
+@mixin flex($justify: flex-start, $align: flex-start, $wrap: nowrap, $dir: row) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-wrap: $wrap;
+    flex-direction: $dir;
+}
+// Menu
+.menu {
+    @include flex(flex-start, flex-start, nowrap, column);
+    margin-bottom: 8px;
+}
+// MenuItem
+.menu-item {
+    @include flex(flex-start, center);
+    width: 100%;
+    padding: 8px;
+
+    border-radius: 4px;
+    color: var(--text-color);
+    transition: background ease-in-out 200ms;
+    .icon {
+        display: flex;
+    }
+    .active-icon {
+        display: none;
+    }
+    .title {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+        margin-left: 8px;
+    }
+    &.active {
+        color: var(--color-primary);
+        .icon {
+            display: none;
+        }
+        .active-icon {
+            display: flex;
+        }
+    }
+    &:hover {
+        background: rgba(22, 24, 35, 0.03);
+    }
+}

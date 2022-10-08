@@ -10,7 +10,7 @@ import { useDebounce } from '~/hookes';
 import { searchService } from '~/services';
 // Components
 import { IconSearch, IconXMarkCircle, IconSpinnerCircle } from '~/components/Icon';
-import Popper from '~/components/Popper/Popper';
+import Popper from '~/components/Popper';
 import AccountItem from '~/components/AccountItem';
 const cx = classNames.bind(styles);
 const Search = () => {

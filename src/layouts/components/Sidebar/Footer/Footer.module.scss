@@ -1,0 +1,19 @@
+.container {
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.link[href],
+.copy-right {
+    color: rgba(22, 24, 35, 0.5);
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 17px;
+    display: inline-block;
+    margin-right: 6px;
+    margin-top: 5px;
+}
+.link[href] {
+    &:hover {
+        text-decoration: underline;
+    }
+}

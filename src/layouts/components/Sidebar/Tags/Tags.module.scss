@@ -1,0 +1,38 @@
+.tags {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.tag-item {
+    display: flex;
+    width: fit-content;
+    max-width: 100%;
+    margin-right: 8px;
+    margin-bottom: 12px;
+    padding: 3px 10px;
+
+    border: 1px solid rgba(22, 24, 35, 0.2);
+    border-radius: 12px;
+    background: rgb(255, 255, 255);
+    line-height: 8px;
+
+    transition: background 200ms ease-in-out 0s;
+    &:hover {
+        background: rgba(22, 24, 35, 0.03);
+    }
+}
+.icon {
+    display: flex;
+}
+.content {
+    display: flex;
+    padding-left: 6px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    color: rgba(22, 24, 35, 0.75);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+}

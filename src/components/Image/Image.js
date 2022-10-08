@@ -2,7 +2,7 @@ import React from 'react';
 import images from '~/assets/images';
 import PropTypes from 'prop-types';
 
-const Image = ({ src, alt, className, fallback: defaultFallback = images.image_holder }) => {
+const Image = ({ src, alt, style, className, fallback: defaultFallback = images.image_holder }) => {
     const [fallback, setFallback] = React.useState(undefined);
     return (
         <img
@@ -12,6 +12,7 @@ const Image = ({ src, alt, className, fallback: defaultFallback = images.image_h
                 setFallback(defaultFallback);
             }}
             className={className}
+            style={style}
         />
     );
 };
