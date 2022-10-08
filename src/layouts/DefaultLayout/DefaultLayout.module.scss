@@ -1,0 +1,18 @@
+@mixin flex($justify: flex-start, $align: flex-start, $wrap: nowrap, $dir: row) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-wrap: $wrap;
+    flex-direction: $dir;
+}
+.body {
+    margin-top: 6rem;
+    @include flex(center);
+    min-height: 1000px;
+}
+.container {
+    width: 115rem;
+    @include flex(space-between);
+}
+.content {
+}

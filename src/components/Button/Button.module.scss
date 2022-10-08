@@ -1,0 +1,46 @@
+.wrapper {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 36px;
+
+    border: none;
+    outline: none;
+    background: transparent;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+}
+// .fill.primary, .fill, .outline.primary, .outline, pillStyle
+.fill {
+}
+.fill.primary {
+    font-weight: 700;
+    color: white;
+    background: var(--color-primary);
+    &:hover {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.06)), #fe2c55;
+    }
+}
+.outline {
+    border: 1px solid rgba(22, 24, 35, 0.12);
+    &:hover {
+        background-color: rgba(22, 24, 35, 0.03);
+    }
+}
+.outline.primary {
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    &:hover {
+        background-color: rgba(254, 44, 85, 0.06);
+    }
+}
+.pillStyle {
+    border-radius: 500px !important;
+}
+.noBorder {
+    border: none !important;
+}

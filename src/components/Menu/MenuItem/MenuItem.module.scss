@@ -1,0 +1,25 @@
+.wrapper {
+    cursor: pointer;
+    display: flex;
+    width: 100%;
+    padding: 10px 8px 10px 16px;
+    font-weight: 600;
+    &:hover {
+        background: rgba(22, 24, 35, 0.03);
+    }
+}
+.title {
+    font-size: 16px;
+    line-height: 22px;
+    color: rgba(22, 24, 35, 1);
+}
+.borderTop {
+    border-top: 1px solid rgba(22, 24, 35, 0.12);
+}
+.isLanguage {
+    font-family: var(--font-family-secondary);
+    font-size: 14px;
+    font-weight: 400 !important;
+    line-height: 20px;
+    color: rgba(22, 24, 35, 1);
+}
